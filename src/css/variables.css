@@ -1,0 +1,29 @@
+@import './main.css';
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray: #f0f0f0;
+
+  --color-green-01: #28d979;
+  --color-green-02: #149063;
+
+  --color-yellow: #ddf163;
+  --color-brown: #7e7312;
+
+  --border-radius-xxl: 190px;
+  --border-radius-xl: 130px;
+  --border-radius-l: 38px;
+  --border-radius-m: 32px;
+  --border-radius-s: 20px;
+  --border-radius-xs: 10px;
+
+  --font-family-base: "Poppins", sans-serif;
+
+  --container-padding-x: 64px;
+  --container-padding-l: 48px;
+  --container-padding-m: 34px;
+
+  --section-padding: 64px;
+}
