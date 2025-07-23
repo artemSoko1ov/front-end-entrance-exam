@@ -2,40 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <title>Resume</title>
 </head>
 
 <body>
+  <main class="content"></main>
   <header class="header">
     <div class="header__inner">
       <img class="header__image" src="./src/assets/images/profileImg.png" alt="">
       <div class="header__about gray">
         <span class="header__greeting">Hello 👋🏻 I’m</span>
         <div class="">
-          <h1 class="header__about-name">Karthik SR</h1>
-          <h1 class="header__about-profile">UX/UI Designer</h1>
+          <h1 class="header__about-name" contenteditable="true">Karthik SR</h1>
+          <h1 class="header__about-profile" contenteditable="true">UX/UI Designer</h1>
         </div>
 
       </div>
       <div class="header__languages gray">
         <h1 class="header__languages-title">Languages</h1>
-        <div class="header__languages-list">
-          <div class="header__languages-item">
-            <h2>English</h2>
-          </div>
-          <div class="header__languages-item">
-            <h2>Malayalam</h2>
-          </div>
-          <div class="header__languages-item">
-            <h2>Hindi</h2>
-          </div>
-        </div>
+        <ul class="header__languages-list">
+          <li class="header__languages-item">
+            <span class="language-name" contenteditable="true">English</span>
+            <span class="language-bar bar--full"></span>
+          </li>
+          <li class="header__languages-item">
+            <span class="language-name" contenteditable="true">Malayalam</span>
+            <span class="language-bar bar--full"></span>
+          </li>
+          <li class="header__languages-item">
+            <span class="language-name" contenteditable="true">Hindi</span>
+            <span class="language-bar bar--mid"></span>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
+
+
+  </main>
   <script type="module" src="./src/js/main.js"></script>
 </body>
 

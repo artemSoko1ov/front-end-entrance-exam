@@ -1,71 +1,101 @@
 @import '../main.css';
 
-.header__inner{
+.header__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3.2em;
 }
 
-.header__image{
+.header__image {
+    min-width: 20em;
+    min-height: 20em;
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-l);
+    max-height: 20em;
+    object-fit: cover;
 }
+
 .header__about,
-.header__languages{
-    width: 100%;
+.header__languages {
+    min-height: 20em;
+    min-width: 20em;
     height: 100%;
     border-radius: var(--border-radius-l);
     padding: var(--container-padding-l);
+    max-height: 20em;
 }
 
-.header__about{
+.header__about {
+    width: 100%;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
-.header__greeting{
+.header__greeting {
     font-size: 1.6rem;
 }
 
-.header__about-name{
+.header__about-name {
     font-weight: 600;
 }
 
-.header__about-profile{
+.header__about-profile {
     font-size: 1.9rem;
     color: #5C5C5C;
 }
 
-.header__languages{
+.header__languages {
+    min-width: 20em;
     display: flex;
     flex-direction: column;
     gap: 2.5em;
     grid-area: 1/3/2/5;
 }
 
-.header__languages-list{
+.header__languages-list {
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 1.6em;
+    row-gap: 1.3em;
 }
 
 .header__languages-item {
-  display: flex;
-  align-items: center;
-  position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
 }
 
-.header__languages-item h2 {
-  margin-right: 2.5em; 
+.language-name {
+    width: 5.85em;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
-.header__languages-item::after {
-  content: '';
-  flex-grow: 1;
-  height: 1.75rem;
-  background-color: var(--color-green-01);
-  border-radius: var(--border-radius-xs);
+.language-bar {
+    height: 1.75em;
+    background-color: #22e675;
+    border-radius: var(--border-radius-xs);
+    display: block;
+}
+
+.bar--full {
+    width: 26.5em;
+
+}
+
+.bar--mid {
+    width: 22em;
+}
+
+@media (max-width: 1440px) {
+    .header__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__languages {
+        grid-area: 2/1/3/3;
+    }
+
 }

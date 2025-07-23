@@ -12,18 +12,18 @@
   --color-yellow: #ddf163;
   --color-brown: #7e7312;
 
-  --border-radius-xxl: 190px;
-  --border-radius-xl: 130px;
+  --border-radius-xxl: 9.5em;
+  --border-radius-xl: 6.5em;
   --border-radius-l: 1.9em;
-  --border-radius-m: 32px;
-  --border-radius-s: 20px;
-  --border-radius-xs: 10px;
+  --border-radius-m: 1.6em;
+  --border-radius-s: 1em;
+  --border-radius-xs: 0.5em;
 
   --font-family-base: "Poppins", sans-serif;
 
-  --container-padding-x: 64px;
-  --container-padding-l: 38px;
-  --container-padding-m: 34px;
+  --container-padding-x: 3.2em;
+  --container-padding-l: 1.9em;
+  --container-padding-m: 1.7em;
 
-  --section-padding: 64px;
+  --section-padding: 3.2em;
 }
