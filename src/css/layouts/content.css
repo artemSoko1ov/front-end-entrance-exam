@@ -29,11 +29,11 @@ article {
     gap: 5em;
 }
 
-.article__post {
+.experience__article-position {
     font-weight: 500;
 }
 
-.article__post-place {
+.experience__article-company {
     font-weight: 400;
 }
 
@@ -49,13 +49,13 @@ article {
     color: var(--color-white);
 }
 
-.article-date {
+.experience__article-date {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.article-date__label {
+.experience__article-note {
     padding: 0.3em 1em;
     border-radius: var(--border-radius-xl);
     color: #DDF163;
