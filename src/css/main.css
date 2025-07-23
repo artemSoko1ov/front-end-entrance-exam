@@ -12,16 +12,19 @@
 
 html {
     font-size: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
     font-family: 'Poppins';
-    padding: var(--section-padding);
 }
 
 .gray {
     background-color: var(--color-gray);
+}
+
+.green {
+    background-color: var(--color-green-01);
 }
 
 h1 {

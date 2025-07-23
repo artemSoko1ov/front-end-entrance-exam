@@ -1,5 +1,8 @@
 @import '../main.css';
 
+.header{
+    margin: var(--margin);
+}
 .header__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -75,7 +78,6 @@
 
 .language-bar {
     height: 1.75em;
-    background-color: #22e675;
     border-radius: var(--border-radius-xs);
     display: block;
 }

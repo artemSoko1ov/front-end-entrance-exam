@@ -1,1 +1,70 @@
 @import '../main.css';
+
+section {
+    padding: var(--section-padding);
+}
+
+.experience {
+    margin: var(--margin);
+    border-radius: var(--border-radius-l);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    max-width: 68%;
+}
+
+article {
+    border-radius: var(--border-radius-m);
+    background-color: var(--color-white);
+    padding: var(--container-padding-s);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.experience__article-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+.article__post {
+    font-weight: 500;
+}
+
+.article__post-place {
+    font-weight: 400;
+}
+
+.experience__article-header {
+    width: 60%;
+}
+
+.experience__article-list {
+    width: 100%;
+}
+
+.article-most-recent {
+    color: var(--color-white);
+}
+
+.article-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-date__label {
+    padding: 0.3em 1em;
+    border-radius: var(--border-radius-xl);
+    color: #DDF163;
+    background-color: #7E731266;
+}
+
+@media (max-width: 1440px) {
+    .experience {
+        max-width: 100%;
+    }
+
+}

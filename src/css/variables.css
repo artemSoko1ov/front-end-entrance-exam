@@ -12,8 +12,9 @@
   --color-yellow: #ddf163;
   --color-brown: #7e7312;
 
-  --border-radius-xxl: 9.5em;
-  --border-radius-xl: 6.5em;
+  --border-radius-xxxl: 9.5em;
+  --border-radius-xxl: 6.5em;
+   --border-radius-xl: 2.95em;
   --border-radius-l: 1.9em;
   --border-radius-m: 1.6em;
   --border-radius-s: 1em;
@@ -24,6 +25,8 @@
   --container-padding-x: 3.2em;
   --container-padding-l: 1.9em;
   --container-padding-m: 1.7em;
+  --container-padding-s: 1.25em;
 
-  --section-padding: 3.2em;
+  --section-padding: 1.6em;
+  --margin: 3.2em
 }
