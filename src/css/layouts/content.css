@@ -1,16 +1,23 @@
 @import '../main.css';
 
-section {
+section,
+aside {
     padding: var(--section-padding);
 }
 
-.experience {
+.section-group {
+    display: flex;
+    align-items: flex-start;
     margin: var(--margin);
+    gap: 3.2em;
+}
+
+.experience {
     border-radius: var(--border-radius-l);
     display: flex;
     flex-direction: column;
     gap: 1.6em;
-    max-width: 68%;
+    min-width: 70%;
 }
 
 article {
@@ -20,6 +27,9 @@ article {
     display: flex;
     flex-direction: column;
     gap: 1.25em;
+}
+.experience__article-period{
+    font-size: 1.25em;
 }
 
 .experience__article-content {
@@ -35,6 +45,7 @@ article {
 
 .experience__article-company {
     font-weight: 400;
+    font-size: 1.2em;
 }
 
 .experience__article-header {
@@ -43,6 +54,11 @@ article {
 
 .experience__article-list {
     width: 100%;
+    font-size: 1.2rem;
+}
+
+.experience__article-item {
+    font-size: 1.2rem;
 }
 
 .article-most-recent {
@@ -67,4 +83,74 @@ article {
         max-width: 100%;
     }
 
+}
+
+.tools {
+    width: 20%;
+    border-radius: var(--border-radius-l);
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+}
+.tools__groups{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    padding: 0 1.5em;
+}
+
+.tools__group {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 0.75rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tools__label {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    border-radius: var(--border-radius-xxxl);
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    margin-top: -2em;
+}
+
+.tools__icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 1.5rem;
+    /* gap: 2em; */
+    list-style: none;
+    padding: 1.16em 1.75em;
+}
+
+
+@media (max-width: 1440px) {
+    .section-group {
+        flex-direction: column;
+    }
+
+    .tools {
+        width: 100%;
+        flex-direction: column;
+    }
+    .tools__groups{
+        flex-direction: row;
+        padding: 0;
+    }
+    .tools__group{
+       min-height: 13em;
+    }
+
+    .tools__icons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
 }
