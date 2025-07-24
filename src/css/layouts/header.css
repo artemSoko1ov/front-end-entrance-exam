@@ -38,6 +38,7 @@
 
 .header__greeting {
     font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .header__about-name {

@@ -52,6 +52,7 @@ article {
 
 .experience__article-header {
     width: 60%;
+    align-self: flex-start;
 }
 
 .experience__article-list {
@@ -129,7 +130,6 @@ article {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2em;
     row-gap: 1.5rem;
-    /* gap: 2em; */
     list-style: none;
     padding: 1.16em 1.75em;
 }
@@ -170,7 +170,7 @@ article {
 .education__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8em;
+    gap: 2.5em;
 }
 
 .education__item-header {
@@ -199,4 +199,34 @@ article {
 
 .tag--green {
     color: var(--color-green-02);
+}
+
+.section-group-interests-footer {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2em;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    height: 100%;
+}
+
+.interests__names {
+    height: 100%;
+    gap: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.interest__name {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-xxl);
+    padding: 0.4em 1.4em;
+    font-size: 1.6rem;
+    text-align: center;
 }

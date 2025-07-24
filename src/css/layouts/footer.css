@@ -1,1 +1,15 @@
 @import '../main.css';
+
+.footer{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: var(--border-radius-l);
+    padding: var(--section-padding);
+}
+.footer__title{
+    margin-bottom: 0.8em;
+}
+.footer__email{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
