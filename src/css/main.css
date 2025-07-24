@@ -25,6 +25,7 @@ body {
 
 .green {
     background-color: var(--color-green-01);
+    color: var(--color-white);
 }
 
 h1 {

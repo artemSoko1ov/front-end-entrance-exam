@@ -3,17 +3,18 @@
 section,
 aside {
     padding: var(--section-padding);
+    border-radius: var(--border-radius-l);
 }
 
-.section-group {
+.section-group-up,
+.section-group-down {
     display: flex;
-    align-items: flex-start;
     margin: var(--margin);
     gap: 3.2em;
 }
 
 .experience {
-    border-radius: var(--border-radius-l);
+
     display: flex;
     flex-direction: column;
     gap: 1.6em;
@@ -28,7 +29,8 @@ article {
     flex-direction: column;
     gap: 1.25em;
 }
-.experience__article-period{
+
+.experience__article-period {
     font-size: 1.25em;
 }
 
@@ -87,12 +89,13 @@ article {
 
 .tools {
     width: 20%;
-    border-radius: var(--border-radius-l);
+
     display: flex;
     flex-direction: column;
     gap: 1.4em;
 }
-.tools__groups{
+
+.tools__groups {
     display: flex;
     flex-direction: column;
     gap: 1.25em;
@@ -133,7 +136,7 @@ article {
 
 
 @media (max-width: 1440px) {
-    .section-group {
+    .section-group-up {
         flex-direction: column;
     }
 
@@ -141,16 +144,59 @@ article {
         width: 100%;
         flex-direction: column;
     }
-    .tools__groups{
+
+    .tools__groups {
         flex-direction: row;
         padding: 0;
     }
-    .tools__group{
-       min-height: 13em;
+
+    .tools__group {
+        min-height: 13em;
     }
 
     .tools__icons {
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;
     }
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    width: 50vw;
+}
+
+.education__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8em;
+}
+
+.education__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education__item-period {
+    font-size: 1.6rem;
+}
+
+.education__item-title {
+    font-weight: 500;
+}
+
+.education__item-tags {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.education__item-place {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.tag--green {
+    color: var(--color-green-02);
 }
