@@ -1,5 +1,8 @@
-@import './main.css';
-
+@import './variables.css';
+@import './media.css';
+@import './layouts/header.css';
+@import './layouts/content.css';
+@import './layouts/footer.css';
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins-Regular.woff2");

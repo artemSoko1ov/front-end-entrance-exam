@@ -1,4 +1,8 @@
-@import '../main.css';
+@import '../fonts.css';
+@import '../variables.css';
+@import '../media.css';
+@import './header.css';
+@import './footer.css';
 
 section,
 aside {
@@ -6,15 +10,14 @@ aside {
     border-radius: var(--border-radius-l);
 }
 
-.section-group-up,
-.section-group-down {
+.main-content-top,
+.main-content-bottom {
     display: flex;
     margin: var(--margin);
     gap: 3.2em;
 }
 
 .experience {
-
     display: flex;
     flex-direction: column;
     gap: 1.6em;
@@ -81,16 +84,8 @@ article {
     background-color: #7E731266;
 }
 
-@media (max-width: 1440px) {
-    .experience {
-        max-width: 100%;
-    }
-
-}
-
 .tools {
     width: 20%;
-
     display: flex;
     flex-direction: column;
     gap: 1.4em;
@@ -134,30 +129,9 @@ article {
     padding: 1.16em 1.75em;
 }
 
-
-@media (max-width: 1440px) {
-    .section-group-up {
-        flex-direction: column;
-    }
-
-    .tools {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .tools__groups {
-        flex-direction: row;
-        padding: 0;
-    }
-
-    .tools__group {
-        min-height: 13em;
-    }
-
-    .tools__icons {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-    }
+.tools__icons img {
+    width: 3vw;
+    max-width: 2em;
 }
 
 .education {
@@ -227,6 +201,6 @@ article {
     background-color: var(--color-white);
     border-radius: var(--border-radius-xxl);
     padding: 0.4em 1.4em;
-    font-size: 1.6rem;
+    font-size: 1.346rem;
     text-align: center;
 }

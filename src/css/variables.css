@@ -1,4 +1,8 @@
-@import './main.css';
+@import './fonts.css';
+@import './media.css';
+@import './layouts/header.css';
+@import './layouts/content.css';
+@import './layouts/footer.css';
 
 :root {
   --color-white: #ffffff;

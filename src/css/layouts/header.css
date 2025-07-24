@@ -1,8 +1,13 @@
-@import '../main.css';
+@import '../fonts.css';
+@import '../variables.css';
+@import '../media.css';
+@import './content.css';
+@import './footer.css';
 
-.header{
+.header {
     margin: var(--margin);
 }
+
 .header__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -10,8 +15,8 @@
 }
 
 .header__image {
-    min-width: 20em;
-    min-height: 20em;
+    width: 20em;
+    height: 20em;
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-l);
@@ -21,8 +26,8 @@
 
 .header__about,
 .header__languages {
-    min-height: 20em;
-    min-width: 20em;
+    height: 20em;
+    width: 20em;
     height: 100%;
     border-radius: var(--border-radius-l);
     padding: var(--container-padding-l);
@@ -51,7 +56,7 @@
 }
 
 .header__languages {
-    min-width: 20em;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2.5em;
@@ -84,21 +89,12 @@
 }
 
 .bar--full {
-    width: 26.5em;
+    /* width: 26.5em; */
+    width: 70%;
 
 }
 
 .bar--mid {
-    width: 22em;
-}
-
-@media (max-width: 1440px) {
-    .header__inner {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .header__languages {
-        grid-area: 2/1/3/3;
-    }
-
+    /* width: 22em; */
+    width: 50%;
 }
