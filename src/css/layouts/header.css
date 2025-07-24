@@ -47,12 +47,14 @@
 }
 
 .header__about-name {
+    font-size: 1.9rem;
     font-weight: 600;
 }
 
 .header__about-profile {
     font-size: 1.9rem;
     color: #5C5C5C;
+    font-weight: 500;
 }
 
 .header__languages {
