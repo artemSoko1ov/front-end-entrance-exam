@@ -21,6 +21,7 @@ body {
 
 .gray {
     background-color: var(--color-gray);
+    transition-duration: 0.3s;
 }
 
 .green {
