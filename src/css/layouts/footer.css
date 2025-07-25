@@ -9,6 +9,11 @@
     color: var(--color-white);
     border-radius: var(--border-radius-l);
     padding: var(--section-padding);
+    transition-duration: 0.3s;
+}
+
+.footer:hover {
+    transform: scale(1.01);
 }
 
 .footer__title {
